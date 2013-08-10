@@ -13,6 +13,10 @@ describe port(80) do
   it { should be_listening }
 end
 
+describe file('/etc/passwd') do
+  it { should be_file }
+end
+
 describe file('/etc/apache2/apache2.conf') do
   it { should be_file }
   it { should contain "ErrorLog" }
