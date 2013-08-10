@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe package('httpd') do
+describe package('apache2') do
   it { should be_installed }
 end
 
